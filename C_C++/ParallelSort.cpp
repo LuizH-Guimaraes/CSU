@@ -1,9 +1,8 @@
 #include <iostream>
 #include <pthread.h>
-#include <time.h>
  
 // number of elements in array
-#define LEN 80000
+#define LEN 24
  
 // number of threads
 #define NUM_THREADS 4
@@ -148,8 +147,5 @@ int main(){
 
   parallel_sort(NUM_THREADS, array, LEN);
  
-
- 
- 
-    return 0;
+  return 0;
 }
