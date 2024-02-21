@@ -4,12 +4,23 @@ package example;
 
 service ExampleService {
   rpc SayHello (HelloRequest) returns (HelloResponse);
+  rpc SaySomething (SomethingRequest) returns (SomethingReply) {}
 }
 
 message HelloRequest {
-  string input = 1;
+  string name = 1;
 }
 
 message HelloResponse {
   string message = 1;
 } 
+
+message SomethingRequest {
+  string name = 1;
+  int32 age = 2;
+  repeated string emails = 3;
+}
+
+message SomethingReply {
+  string message = 1;
+}
