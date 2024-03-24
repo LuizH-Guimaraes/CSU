@@ -54,4 +54,4 @@ def main(num_messages: int, delay: float = 1):
 
 
 if  __name__ == "__main__":
-  main(10000, 0.1)
+  main(100000, 0.1)
